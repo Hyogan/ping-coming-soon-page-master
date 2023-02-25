@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    color: hsl(0, 0%, 59%);;
+    font-weight: 300;
+}
+.title span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+}
+.advantage {
+    font-size: 15px;
+    color: rgb(90, 90, 90);
+    font-weight: 300;
+}
+.notify-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: flex-start;
+    width: 70%;
+}
+.notify-block h1 {
+    font-size: 14px;
+    color: hsl(354, 100%, 66%);
+    margin-top: 5px;
+    display: none;
+}
+.validation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-right: 10px;
+}
+#email {
+    display: flex;
+    width: 400px;
+    width: 90%;
+    height: 40px;
+    border-radius: 45px;
+    border: 1px solid hsl(223, 100%, 88%);
+    margin-right: 10px;
+    padding-left: 30px;
+}
+#email::placeholder {
+   /* color: gray;*/
+   color: hsl(223, 100%, 88%);
+   border-color: none;
+}
+#validating-button {
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 45px;
+    border: none;
+    background: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 400;
+    box-shadow: 3px 3px 4px 2px hsl(223, 62%, 74%);
+}
+#validating-button:hover ,#validating-button :focus{
+    cursor: pointer;
+    background: hsl(223, 62%, 74%);
+    transition: .7s;
+    box-shadow: 4px 4px 4px 2px hsla(223, 67%, 70%, 0.658);
+}
+main img {
+   width: 40%;
+}
+.logo-illus{
+    width: 5%;
+}
+.logo-illus,.title, .advantage  {
+    margin-bottom: 1%;
+}
+.notify-block {
+    margin-bottom: 2%;
+}
+
+.social-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-links ul li a {
+    color: hsl(223, 87%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid hsla(0, 0%, 59%, 0.123);
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    transition: .8s
+}
+    .social-links ul li a:hover{
+        background: hsl(223, 87%, 63%);
+        color: white;
+        border-color: transparent;
+    }
+
+.copyright {
+    color: hsl(223, 48%, 78%);
+    transition: 1s;
+}
+    .copyright:hover{
+        cursor: pointer;
+        color: hsl(223, 56%, 56%);
+    }
+
+@media screen and (max-width : 1050px) {
+    main img {
+        width : 50%
+    }
+    .logo-illus{
+        width: 15%;
+    }
+}
+
+
+@media screen and (max-width : 852px) {
+    main img {
+        width : 60%
+    }
+}
+
+@media screen and (max-width : 770px) {
+    main img {
+        width : 85%
+    }
+}
+
+@media screen and (max-width : 522px) {
+    .notify-block {
+        width: 100%;
+    }
+    main img {
+        width: 90%;
+    }
+}
+@media screen and (max-width : 384px) {
+    .notify-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .validation {
+        width: 100%;
+    }
+
+    #email {
+        width: 70%;
+    }
+    #validating-button {
+        width: 80%;
+        margin-top: 15px;
+    }
+    main img {
+        width: 95%;
+    }
+    
+    .logo-illus{
+        width: 15%;
+    }
+    .logo-illus,.title, .advantage  {
+        margin-bottom: 4%;
+    }
+}
